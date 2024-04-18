@@ -1,1 +1,33 @@
 /* Add screen styles below */
+.container {
+    font-family: Arial, sans-serif;
+
+    .header, .footer {
+        background-color: #f4f4f4;
+        text-align: center;
+        padding: 10px 0;
+        
+        h1, p {
+            margin: 0;
+            padding: 0.5em;
+        }
+    }
+
+    .content {
+        padding: 20px;
+
+        section {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+
+            h2 {
+                color: #333;
+            }
+
+            p {
+                color: #666;
+            }
+        }
+    }
+}
