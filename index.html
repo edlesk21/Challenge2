@@ -26,11 +26,58 @@
               <pre>
                 <code>
                   div class = 'container' 
-                    h1 Hello world h1 
-                    p Here is a paragra
+                    h1 "Hello world"
+                    p "Here is a paragraph"
                 </code>
               </pre>
               <h3> Step 2: </h3>
+              <p> Open your CSS style sheet and begin to add the class selector for .container:</p>
+              <pre>
+                <code>
+                  .container {
+                    (this is where your Nesting will go)
+                  }
+                </code>
+              </pre>
+              <h3>Step 3:</h3>
+              <p> Now instead of adding rules just for the current class, define a "child" class selector within the .container class that edits h1:</p>
+              <pre>
+                <code>
+                  .container {
+                    h1{
+                      (h1 is nested within the parent: .container)
+                    }
+                  }
+                </code>
+              </pre>
+              <h3>Step 4:</h3>
+              <p> Add the rules you want to give to h1. Note: These style rules will only be applied to the h1 within the .container class selector:</p>
+              <pre>
+                <code>
+                  .container {
+                    h1{
+                      color: red;
+                    }
+                  }
+                </code>
+              </pre>
+              <h3>Step 5:</h3>
+              <p> Next, add a rule set for the p (paragraph) within .container:</p>
+              <pre>
+                <code>
+                  .container {
+                    h1{
+                      color: red 
+                    }
+
+                    p {
+                      color: blue;
+                    }
+                  }
+                </code>
+              </pre>
+              <h3> Step 6:</h3>
+              <p> Now you have completed the process of nesting your CSS rulesets! Go out and try it for yourself in your next CSS based work! </p>
           </section>
       </main>
     </div>
